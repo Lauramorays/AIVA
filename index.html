@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+
+  <!-- Barra de navegación a la izquierda -->
+  <div class="barra-navegacion">
+    <button id="boton1" class="boton activo" onclick="window.location.href='index.html'"></button>
+    <button id="boton2" class="boton" onclick="window.location.href='pestana2.html'"></button>
+    <button id="boton3" class="boton" onclick="window.location.href='pestana3.html'"></button>
+  </div>
+
+  <!-- Contenido principal de la página -->
+  <div class="contenido">
+    <h1>Bienvenido a la Página de Inicio</h1>
+    <p>Esta es la página principal.</p>
+
+
+    <div ><img src="imagen/Vector 93.png" alt=""></div>
+
+
+
+  </div>
+
+  <script>
+    // Detecta qué página está activa según la URL
+    const botones = document.querySelectorAll('.boton');
+    const path = window.location.pathname;
+    
+    if (path.includes('pestana2.html')) {
+      document.getElementById('boton2').classList.add('activo');
+    } else if (path.includes('pestana3.html')) {
+      document.getElementById('boton3').classList.add('activo');
+    } else {
+      document.getElementById('boton1').classList.add('activo');
+    }
+  </script>
+
+
+</body>
+</html>

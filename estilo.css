@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    padding-left: 270px;
+    background-color: #130B43;
+  }
+  
+  .barra-navegacion {
+    display: flex; /* Cambia a flex para que los botones estén uno al lado del otro */
+    flex-direction: row; /* Alinea los botones horizontalmente */
+    position: fixed;
+    left: 31px;
+    top: 0px;
+    gap: 12px;
+    height: 100vh; /* Barra de navegación ocupa el 100% de la altura */
+   
+   
+  }
+  
+  .boton {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 75px; /* Ancho inicial */
+    height: 100%; /* Los botones ocupan el 100% de la altura de la pantalla */
+  }
+  
+  .boton.activo {
+    width: 165px; /* El botón activo se expande a 165px */
+    background-image: url(imagen/Fboton.png);
+  }
+  
+  .boton:hover {
+    background-color: #f1efef;
+  }
+  
+  .contenido {
+    margin-left: 165px; /* Se ajusta el margen para acomodar el tamaño del botón expandido */
+    padding: 40px;
+    width: calc(100% - 165px); /* El contenido ocupa el espacio restante */
+    background-color: #130B43;
+    background-image: url(imagen/fondoP.png);
+    background-size: contain;
+    min-height: 100vh;
+    
+  }
+  #boton1{
+    background-color: #FF3A05;
+  }
+  #boton2{
+    background-color: #B09E00;
+  }
+  #boton3{
+    background-color: #005E93;
+  }
+
+
+
+
+  .titulo{
+    display: flex;
+
+  }
