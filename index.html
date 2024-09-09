@@ -180,46 +180,58 @@
     </div><!-- DIVISION 6 FIN -->
     
     <script>
-       let grupo1 = ["imagen/com1.png", "imagen/com2.png", "imagen/com3.png", "imagen/com4.png", "imagen/com5.png"];
-       let grupo2 = ["imagen/com6.png", "imagen/com7.png", "imagen/com8.png", "imagen/com9.png"];
-       let intervalo; // Variable para almacenar el intervalo
-       let estaCambiando = false; // Estado de si está cambiando imágenes
-       let grupoActual = 1; // Variable para alternar entre grupo 1 y grupo 2
+      // Grupos de imágenes
+      let grupo1 = ["imagen/com1.png", "imagen/com2.png", "imagen/com3.png", "imagen/com4.png", "imagen/com5.png"];
+      let grupo2 = ["imagen/com6.png", "imagen/com7.png", "imagen/com8.png", "imagen/com9.png"];
+    
+      // Archivos de sonido
+      let sonido1 = new Audio('imagen/sonido1.mp3'); // Ruta del archivo de sonido para el grupo 1
+      let sonido2 = new Audio('imagen/sonido2.m4a'); // Ruta del archivo de sonido para el grupo 2
+    
+      let intervalo; // Variable para almacenar el intervalo
+      let estaCambiando = false; // Estado de si está cambiando imágenes
+      let grupoActual = 1; // Variable para alternar entre grupo 1 y grupo 2
     
       function iniciarCambioImagenes() {
-       const imagen = document.getElementById('imagenGrupo');
-       let indiceGrupo1 = 0;
-       let indiceGrupo2 = 0;
+        const imagen = document.getElementById('imagenGrupo');
+        let indiceGrupo1 = 0;
+        let indiceGrupo2 = 0;
     
-       // Si ya está en proceso de cambio, detener el intervalo y resetear
-       if (estaCambiando) {
-        clearInterval(intervalo);
-        estaCambiando = false;
-        return;
-      }
-    
-      estaCambiando = true; // Cambiar el estado a "activo"
-    
-      // Comienza a cambiar las imágenes dependiendo del grupo actual
-      intervalo = setInterval(() => {
-        if (grupoActual === 1 && indiceGrupo1 < grupo1.length) {
-          imagen.src = grupo1[indiceGrupo1]; // Muestra imágenes del grupo 1
-          indiceGrupo1++;
-        } else if (grupoActual === 2 && indiceGrupo2 < grupo2.length) {
-          imagen.src = grupo2[indiceGrupo2]; // Muestra imágenes del grupo 2
-          indiceGrupo2++;
-        } else {
-          clearInterval(intervalo); // Detiene la animación cuando se llega al final
-          estaCambiando = false; // Cambiar el estado a "inactivo"
-    
-          // Alterna al otro grupo la próxima vez que se presione el botón
-          grupoActual = grupoActual === 1 ? 2 : 1;
+        // Si ya está en proceso de cambio, detener el intervalo y resetear
+        if (estaCambiando) {
+          clearInterval(intervalo);
+          estaCambiando = false;
+          return;
         }
-      }, 1000); // Duración de 1 segundo por imagen
-     }
+    
+        estaCambiando = true; // Cambiar el estado a "activo"
+    
+        // Reproducir el sonido correspondiente al grupo actual
+        if (grupoActual === 1) {
+          sonido1.play(); // Reproduce el sonido para el grupo 1
+        } else {
+          sonido2.play(); // Reproduce el sonido para el grupo 2
+        }
+    
+        // Comienza a cambiar las imágenes dependiendo del grupo actual
+        intervalo = setInterval(() => {
+          if (grupoActual === 1 && indiceGrupo1 < grupo1.length) {
+            imagen.src = grupo1[indiceGrupo1]; // Muestra imágenes del grupo 1
+            indiceGrupo1++;
+          } else if (grupoActual === 2 && indiceGrupo2 < grupo2.length) {
+            imagen.src = grupo2[indiceGrupo2]; // Muestra imágenes del grupo 2
+            indiceGrupo2++;
+          } else {
+            clearInterval(intervalo); // Detiene la animación cuando se llega al final
+            estaCambiando = false; // Cambiar el estado a "inactivo"
+    
+            // Alterna al otro grupo la próxima vez que se presione el botón
+            grupoActual = grupoActual === 1 ? 2 : 1;
+          }
+        }, 1000); // Duración de 1 segundo por imagen
+      }
     </script>
     
-
 
 <div class="division7">
   <img src="imagen/div7.png" width="450">
@@ -230,16 +242,27 @@
       de partituras y música digital</p> 
   </div>
 </div>
-
-
-    
-
-</div>
+<div class="circulo">
+  <div class="botones">
+    <div class="contenedor-img">
+      <img src="imagen/imagen1.png" alt="Botón 1" class="imagen-boton">
+      <span class="texto-hover">+</span>
     </div>
-
-   
-    </div> <!-- Contenido principal FIN -->
-
+    <div class="contenedor-img">
+      <img src="imagen/imagen2.png" alt="Botón 2" class="imagen-boton">
+      <span class="texto-hover">+</span>
+    </div>
+    <div class="contenedor-img">
+      <img src="imagen/imagen3.png" alt="Botón 3" class="imagen-boton">
+      <span class="texto-hover">+</span>
+    </div>
+  </div>
+</div> <!-- Contenido principal FIN -->
+    </div>
+  
+    </div> 
+    
+    </div>
   
     </div>
 

@@ -75,7 +75,7 @@ body {
 }
 
 #boton1 {
-  background-color: #FF3A05;
+  background-color: #C8330B;
 }
 
 #boton2 {
@@ -88,4 +88,64 @@ body {
 
 .titulo {
   display: flex;
+}
+
+
+
+
+/* Estilo general para las imágenes dentro del contenedor */
+.contenedor-img {
+  gap: 24px;
+  position: relative; /* Necesario para posicionar el texto dentro del círculo */
+  display: inline-block;
+}
+
+/* Estilo de las imágenes */
+.botones img {
+
+  width: 100px; /* Ajusta el tamaño de las imágenes */
+  height: 100px;
+  cursor: pointer; /* Cambia el cursor a pointer (mano) */
+  transition: transform 0.3s, filter 0.3s; /* Añade animaciones suaves */
+}
+
+/* Efecto de hover sobre la imagen */
+.botones img:hover {
+  transform: scale(1.2); /* Agranda la imagen al pasar el mouse */
+  filter: brightness(0.9); /* Cambia el tono de la imagen */
+}
+
+/* Estilo del texto que aparecerá en el hover */
+.texto-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  opacity: 0; /* Oculto por defecto */
+  transition: opacity 0.3s ease-in-out; /* Animación suave para la aparición del texto */
+  pointer-events: none; /* Asegura que el texto no interfiera con el hover de la imagen */
+}
+.contenedor-img:hover .texto-hover {
+  opacity: 1; /* Mostrar el texto al hacer hover */
+}
+
+/* Estilo del contenedor del círculo */
+.circulo {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end; /* Coloca los botones al final del div */
+  align-items: center; /* Centra verticalmente los botones en el div */
+  height: 100px; /* Ajusta el tamaño del contenedor según sea necesario */
+}
+.circulo2 {
+  position: absolute;
+  top: 2200px;
+  left: 1620px;
+  display: flex;
+  justify-content: flex-end; /* Coloca los botones al final del div */
+  align-items: center; /* Centra verticalmente los botones en el div */
+  height: 100px; /* Ajusta el tamaño del contenedor según sea necesario */
 }
