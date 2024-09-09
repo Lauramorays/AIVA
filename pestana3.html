@@ -4,25 +4,212 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilo.css">
-  <title>Sección 2</title>
+  <link rel="stylesheet" href="estilo3.css">
+  <title> AIVA IA</title>
 </head>
 <body>
 
   <!-- Barra de navegación a la izquierda -->
   <div class="barra-navegacion">
     <button id="boton1" class="boton" onclick="window.location.href='index.html'"></button>
-    <button id="boton2" class="boton " onclick="window.location.href='pestana2.html'"></button>
+    <button id="boton2" class="boton" onclick="window.location.href='pestana2.html'"></button>
     <button id="boton3" class="boton activo" onclick="window.location.href='pestana3.html'"></button>
   </div>
 
   <!-- Contenido principal de la página -->
   <div class="contenido">
-    <div class="titulo">
-      <Div><H1>AIVA <img src="imagen/lineaS.png"> Competencia </H1></Div>
-      <div><img src="imagen/logo.png" alt=""></div>
+    <div class="division1">
+      <div class="titulo-a">
+        <div><h1>AIVA </h1></div>
+        <img src="imagen/lineaS.png" alt="">
+        <div><h2>Competencia</h2></div>
+      </div>
+      <div class="titulo-b"><img src="imagen/logo.png" alt=""></div>
     </div>
-   
-  </div>
+    
+    <div class="division2">
+      <button class="btn" onclick="mostrarInformacion('calidad')">Calidad</button>
+      <button class="btn" onclick="mostrarInformacion('personalizacion')">Personalización</button>
+      <button class="btn" onclick="mostrarInformacion('licencias')">Licencias</button>
+      <button class="btn" onclick="mostrarInformacion('complejidad')">Complejidad</button>
+    </div>
+
+    <!-- Contenido Inicial -->
+    <div class="contenido3">
+      <div id="vacio" class="info">
+        <div class="aiva" id="tam">
+          <img src="imagen/aiva.png" alt="">
+          <div><h2>AIVA</h2><br><br>
+            <img src="imagen/nota1.png" alt="">
+          </div>
+        </div>
+        <div class="soundraw" id="tam">
+          <img src="imagen/Soundraw.png" alt="">
+          <div><h2>Soundraw</h2><br><br>
+            <img src="imagen/nota1.png" alt="">
+          </div>
+        </div>
+        <div class="amper" id="tam">
+          <img src="imagen/Amper Music.png" alt="">
+          <div><h2>AmperMusic</h2><br><br>
+            <img src="imagen/nota1.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Otras secciones que se mostrarán al hacer clic en los botones -->
+      <div id="calidad" class="info oculto">
+        <div class="aiva" id="tam">
+           <img src="imagen/aiva.png">
+           <div>
+            <h2>AIVA</h2>
+            <p>Composiciones de alta calidad,
+               cercana a la de compositores humanos,
+                ideal para proyectos de expresión 
+                artística compleja.</p>
+                <img src="imagen/nota11.png" alt="">
+           </div>
+            </div>
+        <div class="soundraw" id="tam">
+          <img src="imagen/Soundraw.png" alt="">
+          <div><h2>Soundraw</h2>
+            <p>La calidad de la música generada puede
+              variar y no siempre alcanza gran profundidad, 
+               especialmente en estilos más sofisticados.</p>
+            <img src="imagen/nota12.png" alt="">
+          </div>
+        </div>
+        <div class="amper" id="tam">
+          <img src="imagen/Amper Music.png" alt="">
+          <div><h2>AmperMusic</h2>
+            <p>Genera composiciones menos complejas, 
+              adecuadas para proyectos rápidos y 
+              menos especializados.</p>
+            <img src="imagen/nota13.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="personalizacion" class="info oculto">
+        <div class="aiva" id="tam">
+          <img src="imagen/aiva.png" alt="">
+          <div>
+           <h2>AIVA</h2>
+           <p>Crea tus propios modelos de estilo, carga influencias 
+            de audio o MIDI y edita las pistas generadas para que coincidan con tu visión.</p>
+           <img src="imagen/nota21.png" alt="">
+          </div>
+           </div>
+       <div class="soundraw"id="tam">
+         <img src="imagen/Soundraw.png" alt="">
+         <div><h2>Soundraw</h2>
+           <p>Puede modificar las notas individuales, ajustar la 
+            disposición, agregar o eliminar elementos musicales.</p>
+           <img src="imagen/nota22.png" alt="">
+         </div>
+       </div>
+       <div class="amper" id="tam">
+         <img src="imagen/Amper Music.png" alt="">
+         <div><h2>AmperMusic</h2>
+           <p>Ofrece opciones limitadas de personalización, las opciones disponibles son más generales y menos detalladas.</p>
+           <img src="imagen/nota23.png" alt="">
+         </div>
+       </div>
+     
+      </div>
+
+      <div id="licencias" class="info oculto">
+        <div class="aiva" id="tam">
+          <img src="imagen/aiva.png">
+          <div>
+           <h2>AIVA</h2>
+           <p>Permite el uso libre de las composiciones. Ideal para usuarios que necesitan garantías legales para sus proyectos.</p>
+               <img src="imagen/nota31.png" alt="">
+          </div>
+           </div>
+       <div class="soundraw" id="tam">
+         <img src="imagen/Soundraw.png" alt="">
+         <div><h2>Soundraw</h2>
+           <p>Los derechos de uso y las licencias varían, complicando la planificación para proyectos comerciales o grandes. Variedad de precios.</p>
+           <img src="imagen/nota32.png" alt="">
+         </div>
+       </div>
+       <div class="amper" id="tam">
+         <img src="imagen/Amper Music.png" alt="">
+         <div><h2>AmperMusic</h2>
+           <p>
+            Modelo de suscripción que incluye costos adicionales para uso comercial. Las licencias restrictivas dependiendo del plan.
+           </p>
+           <img src="imagen/nota33.png" alt="">
+         </div>
+       </div>
+      </div>
+
+      <div id="complejidad" class="info oculto">
+        <div class="aiva" id="tam">
+          <img src="imagen/aiva.png">
+          <div>
+           <h2>AIVA</h2>
+           <p>Interfaz es intuitiva, para usuarios con experiencia previa y para principiantes. Experiencia fluida y fácil de navegar.</p>
+               <img src="imagen/nota41.png" alt="">
+          </div>
+           </div>
+       <div class="soundraw" id="tam">
+         <img src="imagen/Soundraw.png" alt="">
+         <div><h2>Soundraw</h2>
+           <p>La interfaz es interactiva y permite ajustes en tiempo real, la personalización dinámica puede requerir un mayor conocimiento previo.</p>
+           <img src="imagen/nota42.png" alt="">
+         </div>
+       </div>
+       <div class="amper" id="tam">
+         <img src="imagen/Amper Music.png" alt="">
+         <div><h2>AmperMusic</h2>
+           <p>Interfaz de usuario compleja, no apta para principiantes.
+           </p>
+           <img src="imagen/nota43.png" alt="">
+         </div>
+       </div>
+      </div>
+      
+    </div>
+    <div class="circulo">
+      <div class="botones"></div>
+        <img src="imagen/imagen1.png" alt="Botón 1">
+        <img src="imagen/imagen2.png" alt="Botón 2">
+        <img src="imagen/imagen3.png" alt="Botón 3">
+      </div>
+    </div>
+    </div>
+      
+    
+  </div> <!-- FIN Contenido principal de la página -->
+  
+  <script>
+    function mostrarInformacion(seccion) {
+      // Ocultar todas las secciones de información
+      const infos = document.querySelectorAll('.info');
+      infos.forEach(info => info.classList.add('oculto'));
+      
+      // Mostrar la sección seleccionada
+      const infoSeleccionada = document.getElementById(seccion);
+      if (infoSeleccionada) {
+        infoSeleccionada.classList.remove('oculto');
+      }
+      
+      // Quitar clase 'activo' de todos los botones
+      const botones = document.querySelectorAll('.btn');
+      botones.forEach(b => b.classList.remove('activo'));
+
+      // Agregar clase 'activo' al botón clicado
+      event.target.classList.add('activo');
+
+      // Ocultar la sección vacio al hacer clic en cualquier botón
+      const vacio = document.getElementById('vacio');
+      if (vacio) {
+        vacio.classList.add('oculto');
+      }
+    }
+  </script>
 
   <script>
     // Detecta qué página está activa según la URL

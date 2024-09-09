@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('ruta/a/la/fuente/Lato-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('ruta/a/la/fuente/Lato-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('ruta/a/la/fuente/Lato-Black.woff2') format('woff2');
+  font-weight: 900;
+}
+
+
+p{
+  font-family: 'Lato-Regular', sans-serif;
+    padding-top: 16px;
+    padding-left: 16px;
+    color: white;
+    font-size: 24px;
+}
+
+
+.cabezera{
+    display: flex;
+    background-color: #241D51;
+    width: 1100px;
+    height: 260px;
+    padding-left: 16px;
+    justify-content: left;
+    align-items: center;
+    gap: 16px;
+
+    h3{
+      font-family: 'Lato-Black', sans-serif;
+      font-size: 50px;
+      color: white;
+     
+  
+    }h1 {
+      font-family: 'Lato-Black', sans-serif;
+      font-size: 230px;
+      color: white;
+    }
+}
+#logo1{
+  background-color: #241D51;
+  border-radius: 16px;
+  width: 280px;
+  height: 260px;
+  img{
+      margin-top: 25px;
+  }
+  
+}
+.division1{
+    height: 266px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.division2{
+  
+    display: flex;
+    gap: 12px;
+   
+}
+.division3{
+    height: 266px;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    p{
+      font-family: 'Lato-Regular', sans-serif;
+        padding-left: 65px;
+        color: white;
+        font-size: 24px;
+    }h4{
+      font-family: 'Lato-Black', sans-serif;
+        color: white;
+        font-size: 40px;
+        padding-left: 65px;
+    }
+    
+
+}
+.division4{
+    display: flex;
+    gap: 60px;
+
+}
+.division5 {
+  display: flex;
+  align-items: center;
+  height: 770px;
+  background-color: #0E063F;
+  gap: 60px;
+  border: #0E063F;
+}
+
+.division5 h3 {
+  font-family: 'Lato-Black', sans-serif;
+  font-size: 32px;
+  color: white;
+}
+
+.division5 p {
+  font-family: 'Lato-Medium', sans-serif;
+  font-size: 32px;
+  color: white;
+}
+
+.alinea {
+  display: flex;
+  flex-direction: column; /* Apila los íconos verticalmente */
+  gap: 20px;
+}
+
+.alinea div {
+  display: flex;
+  align-items: center; /* Alinea el texto y la imagen verticalmente */
+}
+
+.alinea img {
+  width: 48px; /* Fija un ancho específico para que no se deforme */
+  height: 48px; /* Fija un alto específico para que no se deforme */
+  object-fit: contain; /* Mantiene la proporción de la imagen */
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.liE {
+  width: 100%;
+  height: 554px;
+  background-color: #261F52;
+  border-radius: 5px;
+}
+
+.alinea img {
+  max-width: 80%; /* Asegura que la imagen no exceda su tamaño original */
+  height: auto; /* Mantiene la proporción original de la imagen */
+}
+.alinea {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos uno debajo del otro */
+  gap: 12px;
+}
+
+.alinea div {
+  padding-top: 12px;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.division6 {
+  margin-top: 15%;
+  height: 1100px;
+  position: relative; /* Relativo al contenedor */
+  
+h3{
+  font-family: 'Lato-Black', sans-serif;
+    font-size: 32px;
+    color: white;
+}
+}
+
+.btn-combinar {
+  position: absolute;
+  top: 100px; /* Ajusta según la posición deseada en el contenedor */
+  left: 650px; /* Ajusta según la posición deseada en el contenedor */
+  background-color: #261F52; /* Fondo azul */
+  color: white; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor a puntero */
+  width: 219px;
+  height: 77px;
+  font-size: 24px; /* Tamaño del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.btn-combinar:hover {
+  background-color: #FF3E0A; /* Cambia a naranja cuando se pasa el mouse */
+}
+
+.division7 {
+  width: 100%;
+  height: auto;
+  position: relative; /* Necesario para el posicionamiento absoluto del texto */
+  display: flex;
+  justify-content: center; /* Centrar la imagen horizontalmente */
+  align-items: center; /* Centrar la imagen verticalmente */
+}
+
+.division7 img {
+  display: block; /* Elimina los espacios alrededor de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  width: 100%; /* Ajusta según el ancho que desees */
+  max-width: 100%; /* Evita que se expanda más allá de su contenedor */
+}
+
+.division7 .pos7 {
+  position: absolute; /* Permite mover el texto sin afectar a la imagen */
+  top: 50px; /* Ajusta esta posición según dónde quieras el texto */
+  left: 50px; /* Ajusta esta posición según dónde quieras el texto */
+}
+
+.division7 p {
+  font-family: 'Lato-Medium', sans-serif;
+  font-size: 32px;
+  color: white;
+}
+.division7 img {
+  display: block; /* Elimina los espacios alrededor de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  max-width: 80%; /* Cambia este valor para reducir el tamaño (ej: 50% del contenedor) */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+#tamaIma{
+  position: absolute;
+  padding-left: 144px;
+    font-size: 50%;
+}
+
+#miCirculo {
+    width: 465px;
+    height: 465px;
+  }
+  #miPartitura{
+    position: absolute;
+    padding-top: 600px;
+    padding-left: 0px;
+  }
+
+  #liA{
+    font-family: 'Lato-Regular', sans-serif;
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 20px;
+  
+  }
+  #posicion{
+    position: relative;
+  }
+  
+  #liB{
+    position: absolute;
+    padding-top: 600px;
+    padding-left: 18px;
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 24px;
+    color: white;
+  }
+
+
+
+ 

@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilo.css">
-
+  <link rel="stylesheet" href="estilo1.css">
+  <title>AIVA IA </title>
 </head>
 <body>
 
@@ -17,16 +18,233 @@
 
   <!-- Contenido principal de la página -->
   <div class="contenido">
-    <h1>Bienvenido a la Página de Inicio</h1>
-    <p>Esta es la página principal.</p>
+    <div class="division1">
+      <div class="cabezera"> 
+        <h1>AIVA <img src="imagen/lineaS.png" > </h1> 
+          <h3>Artificial <br>Intelligence <br> Virtual Artist</h3>
+      </div>
+      <div id="logo1"><img src="imagen/logo.png"></div>
+    </div>
+
+    <div class="division2">
+      <img  src="imagen/lineaA.png"  id="posicion" height="1066.5">
+      <div id="liA">
+        AIVA es una inteligencia artificial especializada en la composición musical,<br>
+         desarrollada por AIVA Technologies. Desde su lanzamiento ha ganado  <br> notoriedad
+         por su capacidad para componer música de manera autónoma, <br>especialmente  
+         en géneros como la música clásica, la música de cine <br>
+          y las bandas sonoras 
+          para videojuegos.
+      </div>
+    </div>
+
+    <br><br><br><br><br> <br>
+    <div class="division3">
+      <div>
+        <h4>¿Cómo funciona?</h4>
+        <p>AIVA utiliza <b>redes neuronales <br>
+          profundas (Deep Learning)</b>  para su<br>
+          funcionamiento.</p>
+        <p>Diseñadas para emular <br>
+           el comportamiento del cerebro humano, <br>
+           esencial para: <br> <br>
+           <img src="imagen/icoB.png"> identificación de estilos <br> <br>  
+           <img src="imagen/icoP.png" > reproducción de piezas complejas
+        </p>
+        <br>
+      </div>
+      <div>
+        <!-- Imagen que se alternará -->
+        <img id="miCirculo" src="imagen/circulo1.png" alt="Imagen Alternada">
+    
+         <script>
+           const imagenes = [
+             "imagen/circulo1.png",  // Imagen 1
+             "imagen/circulo2.png",  // Imagen 2
+           ];
+    
+           let indiceActual = 0;
+            function alternarImagen() {
+            const imagen = document.getElementById('miCirculo');
+            // Cambiar al siguiente índice en la lista de imágenes
+             indiceActual = (indiceActual + 1) % imagenes.length; // Esto hace que el índice sea cíclico
+             imagen.src = imagenes[indiceActual]; // Cambia la imagen
+            }
+            // Alternar imágenes cada 2 segundos (2000 ms)
+             setInterval(alternarImagen, 2000);
+          </script>
+    
+      </div>
+    
+    </div>
+    
+    <br><br><br><br><br> <br>
+
+    <div class="division4"> 
+      <img src="imagen/lineaB.png" width="" height="2172.95">
+      
+      <div id="liC">
+        <!-- Imagen que se alternará -->
+        <img id="miPartitura" src="imagen/partitura1.png" alt="Imagen Alternada">
+      
+        <script>
+          const imagenesPartitura = [
+            "imagen/partitura1.png",  // Imagen 1
+            "imagen/partitura2.png",  // Imagen 2
+          ];
+      
+          let indiceActualPartitura = 0;
+          
+          function alternarImagenPartitura() {
+            const imagen = document.getElementById('miPartitura');
+            // Cambiar al siguiente índice en la lista de imágenes
+            indiceActualPartitura = (indiceActualPartitura + 1) % imagenesPartitura.length;
+            imagen.src = imagenesPartitura[indiceActualPartitura]; // Cambia la imagen
+          }
+      
+          // Alternar imágenes cada 2 segundos (2000 ms)
+          setInterval(alternarImagenPartitura, 2000);
+        </script>
+      </div>
+      <img src="imagen/lineaC.png" width="" height="780">
+      
+      <div id="liB">
+        Emplea redes neuronales <br>
+        profundas para analizar <br>
+        grandes volúmenes de datos <br>
+        musicales.
+        <br>
+        <img src="imagen/lineaD.png" alt="">
+      </div>
+    </div><!-- FIN DIVISION 4-->
+
+    <div class="division5">
+      <div>
+        <p>Descompone las <br>
+          composiciones en  <br>
+          sus componentes básicos: </p>
+          <div class="alinea">
+            <div><img src="imagen/ico1.png" width="47.72"> <h3>Melodías</h3> </div>
+            <div><img src="imagen/ico2.png" > <h3>Armonías</h3> </div>
+            <div> <img src="imagen/ico3.png" >  <h3>Ritmos</h3> </div>
+          </div>
+          
+         
+          <p>para reconocer 
+            <br> patrones comunes</p>
+       
+      </div>
+      
+      <div class="liE">
+        <!-- Imagen que se alternará -->
+        <img id="imagenAlternada" src="imagen/1.png" alt="Imagen Alternada">
+      </div>
+    
+      <script>
+        const imagenesAlternadas = [
+          "imagen/1.png",  // Imagen 1
+          "imagen/2.png",  // Imagen 2
+          "imagen/3.png",  // Imagen 3
+          "imagen/4.png",  // Imagen 4
+          "imagen/5.png",  // Imagen 5
+          "imagen/6.png",  // Imagen 6
+          "imagen/7.png",  // Imagen 7
+          "imagen/8.png"   // Imagen 8
+        ];
+    
+        let indiceActualAlternada = 0;
+        
+        function alternarImagenes() {
+          const imagen = document.getElementById('imagenAlternada');
+          // Cambiar al siguiente índice en la lista de imágenes
+          indiceActualAlternada = (indiceActualAlternada + 1) % imagenesAlternadas.length;
+          imagen.src = imagenesAlternadas[indiceActualAlternada]; // Cambiar la imagen
+        }
+        
+        // Alternar imágenes cada 2 segundos (2000 ms)
+        setInterval(alternarImagenes, 2000);
+      </script>
+    </div> <!-- DIVISION 5 FIN -->
+
+    <div class="division6">
+      <div>
+        <h3> Una vez que AIVA ha aprendido estos patrones, los aplica en crear nuevas composiciones.</h3>
+        <br><br><br>
+      </div>
+      
+      <div>
+        <img id="imagenGrupo" src="imagen/com1.png" alt="">
+        <!-- Botón con estilo -->
+        <button class="btn-combinar" onclick="iniciarCambioImagenes()">Combinar</button>
+      </div>
+    </div><!-- DIVISION 6 FIN -->
+    
+    <script>
+       let grupo1 = ["imagen/com1.png", "imagen/com2.png", "imagen/com3.png", "imagen/com4.png", "imagen/com5.png"];
+       let grupo2 = ["imagen/com6.png", "imagen/com7.png", "imagen/com8.png", "imagen/com9.png"];
+       let intervalo; // Variable para almacenar el intervalo
+       let estaCambiando = false; // Estado de si está cambiando imágenes
+       let grupoActual = 1; // Variable para alternar entre grupo 1 y grupo 2
+    
+      function iniciarCambioImagenes() {
+       const imagen = document.getElementById('imagenGrupo');
+       let indiceGrupo1 = 0;
+       let indiceGrupo2 = 0;
+    
+       // Si ya está en proceso de cambio, detener el intervalo y resetear
+       if (estaCambiando) {
+        clearInterval(intervalo);
+        estaCambiando = false;
+        return;
+      }
+    
+      estaCambiando = true; // Cambiar el estado a "activo"
+    
+      // Comienza a cambiar las imágenes dependiendo del grupo actual
+      intervalo = setInterval(() => {
+        if (grupoActual === 1 && indiceGrupo1 < grupo1.length) {
+          imagen.src = grupo1[indiceGrupo1]; // Muestra imágenes del grupo 1
+          indiceGrupo1++;
+        } else if (grupoActual === 2 && indiceGrupo2 < grupo2.length) {
+          imagen.src = grupo2[indiceGrupo2]; // Muestra imágenes del grupo 2
+          indiceGrupo2++;
+        } else {
+          clearInterval(intervalo); // Detiene la animación cuando se llega al final
+          estaCambiando = false; // Cambiar el estado a "inactivo"
+    
+          // Alterna al otro grupo la próxima vez que se presione el botón
+          grupoActual = grupoActual === 1 ? 2 : 1;
+        }
+      }, 1000); // Duración de 1 segundo por imagen
+     }
+    </script>
+    
 
 
-    <div ><img src="imagen/Vector 93.png" alt=""></div>
-
-
-
+<div class="division7">
+  <img src="imagen/div7.png" width="450">
+  <div class="pos7">
+    <p>La creación se basa <br>
+      en el entrenamiento <br>
+      en una gran base de datos <br>
+      de partituras y música digital</p> 
   </div>
+</div>
 
+
+    
+
+</div>
+    </div>
+
+   
+    </div> <!-- Contenido principal FIN -->
+
+  
+    </div>
+
+  </div> 
+  
   <script>
     // Detecta qué página está activa según la URL
     const botones = document.querySelectorAll('.boton');
