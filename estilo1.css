@@ -47,15 +47,34 @@ p{
       color: white;
     }
 }
+.nucleo {
+  margin-left: 138px;
+  background-color: #0E063F;
+  display: flex;
+  gap: 150px; /* Mantiene una separación uniforme entre las imágenes */
+  width: 937px;
+  height: 250px;
+  border: 2px solid #FF3E0A; /* Corregido el borde */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Alinea las imágenes verticalmente */
+}
+
+.nucleo img {
+  margin: 0; /* Remueve márgenes que alteran la separación uniforme */
+  max-width: 100%; /* Mantiene el tamaño original de las imágenes */
+  max-height: 100%; /* Evita que las imágenes excedan el contenedor */
+}
 #logo1{
-  background-color: #241D51;
-  border-radius: 16px;
-  width: 280px;
-  height: 260px;
-  img{
-      margin-top: 25px;
-  }
-  
+ 
+    background-color: #241D51;
+    border-radius: 16px;
+    width: 337px;
+    height: 266px;
+    img{
+        margin-top: 40px;
+        margin-left: 80px;
+    }
+   
 }
 .division1{
     height: 266px;
@@ -67,6 +86,14 @@ p{
   
     display: flex;
     gap: 12px;
+    p{
+      margin-left: 127px;
+      font-family: 'Lato-Regular', sans-serif;
+      color: white;
+      font-size: 32px;
+    }
+   
+
    
 }
 .division3{
@@ -187,6 +214,29 @@ h3{
 
 .btn-combinar:hover {
   background-color: #FF3E0A; /* Cambia a naranja cuando se pasa el mouse */
+
+}.btn-botonF:hover {
+  background-color: #FF3E0A; /* Cambia a naranja cuando se pasa el mouse */
+  color: white;
+    
+}
+.btn-botonF{
+ 
+  position:relative;
+  top: -370px;
+  background-color: white; /* Fondo azul */
+    font-family: 'Lato-Bold', sans-serif;
+    font-size: 50px;
+    color: #FF3E0A; /* Texto blanco */
+    align-self: center;
+    justify-items: center; 
+  padding: 10px 20px; /* Espaciado interno del botón */
+ 
+  cursor: pointer; /* Cambia el cursor a puntero */
+  width: 516px;
+  height: 106px;
+  border-radius: 24px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Suaviza el cambio de color */
 }
 
 .division7 {
@@ -198,19 +248,18 @@ h3{
   align-items: center; /* Centrar la imagen verticalmente */
 }
 
+
 .division7 img {
   display: block; /* Elimina los espacios alrededor de la imagen */
   margin: 0 auto; /* Centra la imagen horizontalmente */
   width: 100%; /* Ajusta según el ancho que desees */
   max-width: 100%; /* Evita que se expanda más allá de su contenedor */
 }
-
 .division7 .pos7 {
   position: absolute; /* Permite mover el texto sin afectar a la imagen */
   top: 50px; /* Ajusta esta posición según dónde quieras el texto */
   left: 50px; /* Ajusta esta posición según dónde quieras el texto */
 }
-
 .division7 p {
   font-family: 'Lato-Medium', sans-serif;
   font-size: 32px;
@@ -222,6 +271,40 @@ h3{
   max-width: 80%; /* Cambia este valor para reducir el tamaño (ej: 50% del contenedor) */
   height: auto; /* Mantiene la proporción de la imagen */
 }
+.division8 {
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrar la imagen horizontalmente */
+  h2{
+    font-family: 'Lato-bold', sans-serif;
+    font-size: 96px;
+    color: white;
+    align-self: center;
+    justify-items: center;
+    position: absolute;
+    }
+}
+.division8 img {
+  display: block; /* Elimina los espacios alrededor de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  width: 100%; /* Ajusta según el ancho que desees */
+  max-width: 100%; /* Evita que se expanda más allá de su contenedor */
+
+
+}
+
+
+.division8 {
+  position: relative; /* Permite mover el texto sin afectar a la imagen */
+  top: 190px; /* Ajusta esta posición según dónde quieras el texto */
+  left: -19px; /* Ajusta esta posición según dónde quieras el texto */
+}
+
 #tamaIma{
   position: absolute;
   padding-left: 144px;

@@ -1,21 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  
+html{
+  width: 1920px;
+  margin-top: 64px;
 }
+
 
 body {
   display: flex;
   min-height: 100vh;
-  padding-left: 270px;
   background-color: #130B43;
+}
+.contenido {
+  padding-left: 384px;
+  width: 1556px;
+  min-height: 100vh; /* Asegura que cubra toda la altura de la ventana */
+  background-color: #130B43;
+  background-image: url(imagen/fondoP.png);
+  background-size: 1556px 100%; /* Mantiene el ancho fijo en 1556px */
+  background-repeat: repeat-y; /* Repite solo en el eje Y (verticalmente) */
+  background-position: 380px 0; /* Posiciona el fondo a partir de 380px desde la izquierda */
 }
 
 .barra-navegacion {
   display: flex;
   flex-direction: row;
   position: fixed;
-  left: 31px;
+  left: 34px;
   top: 0px;
   gap: 12px;
   height: 100vh;
@@ -23,56 +32,47 @@ body {
 
 .boton {
   background-color: #444;
+  margin-top: 64px;
   color: white;
   border: none;
-  padding: 20px;
+  padding: 0; /* Elimina padding para ajustar el contenedor interno */
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease; /* Animación suave para el cambio de tamaño */
   width: 75px;
   height: 100%;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: flex-start; /* Alinea el contenido en la parte superior */
 }
 
+/* Estilo del botón activo, se expande a 165px */
 .boton.activo {
-  width: 165px;
+  width: 165px; /* El botón activo se expande a 165px */
 }
 
-#boton1.activo {
-  background-color: #FF3E0A;
-  background-image: url(imagen/Fboton.png);
+/* El contenedor del ícono también crece en proporción */
+.icono-contenedor {
+  padding-top: 20px; /* Ajusta el padding superior */
+  padding-bottom: 20px; /* Ajusta el padding inferior */
+  display: flex;
+  justify-content: center; /* Centra el icono horizontalmente */
+  transition: width 0.3s ease; /* Transición para el cambio de tamaño del icono */
 }
 
-#boton2.activo {
-  background-color: #E8D106; 
-  background-image: url(imagen/Fboton.png);
+/* El ícono dentro del botón toma el 100% del espacio disponible */
+.logo-barra {
+  align-content: center;
+  width: 80%;
+  height: auto;
+  transition: width 0.3s ease; /* Animación suave para el cambio de tamaño */
 }
 
-#boton3.activo {
-  background-color: #00A3FF; 
-  background-image: url(imagen/Fboton.png);
+/* Cuando el botón es activo, el ícono dentro del contenedor también se ajusta */
+.boton.activo .logo-barra {
+  max-width: 120px; /* Aumenta el tamaño del logo cuando el botón está activo */
 }
 
-/* Cambios de color específicos para cada botón al pasar el mouse */
-#boton1:hover {
-  background-color: #FF3E0A;
-}
 
-#boton2:hover {
-  background-color: #E8D106;
-}
-
-#boton3:hover {
-  background-color: #00A3FF;
-}
-
-.contenido {
-  margin-left: 165px;
-  padding: 40px;
-  width: calc(100% - 165px);
-  background-color: #130B43;
-  background-image: url(imagen/fondoP.png);
-  background-size: contain;
-  min-height: 100vh;
-}
 
 #boton1 {
   background-color: #C8330B;
@@ -86,10 +86,49 @@ body {
   background-color: #005E93;
 }
 
+
+#boton1.activo {
+  background-color: #FF3E0A;
+  background-image: url(imagen/Fboton.png);
+}
+
+#boton2.activo {
+  background-color: #E8D106;
+  background-image: url(imagen/Fboton.png);
+}
+
+#boton3.activo {
+  background-color: #00A3FF;
+  background-image: url(imagen/Fboton.png);
+}
+
+#boton1:hover {
+  background-color: #FF3E0A;
+}
+
+#boton2:hover {
+  background-color: #E8D106;
+}
+
+#boton3:hover {
+  background-color: #00A3FF;
+}
+
+
 .titulo {
   display: flex;
 }
 
+.contenido {
+  padding-left: 384px;
+  width: 1556px;
+  min-height: 100vh; /* Asegura que cubra toda la altura de la ventana */
+  background-color: #130B43;
+  background-image: url(imagen/fondoP.png);
+  background-size: 1556px 100%; /* Mantiene el ancho fijo en 1556px */
+  background-repeat: no-repeat; /* Evita repetir la imagen */
+  background-position: 364px 0; /* Posiciona el fondo a partir de 364px desde la izquierda */
+}
 
 
 
